@@ -46,7 +46,7 @@ function inputGrid() {
       });
     }
     if (input < 2 || input > 100) {
-      alert("Input must be between 1 and 100");
+      alert("Input must be between 2 and 100");
       container.innerHTML = "";
       return;
     }
