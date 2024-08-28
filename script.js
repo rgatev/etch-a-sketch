@@ -1,10 +1,11 @@
 const container = document.querySelector(".container");
-const btn1 = document.querySelector("#btn1");
 const wrapper = document.querySelector(".wrapper");
+const btn1 = document.querySelector("#btn1");
+const btn2 = document.querySelector("#btn2");
 const btn3 = document.querySelector("#btn3");
 
 function inputGrid() {
-  btn3.addEventListener("click", reset);
+  btn2.addEventListener("click", reset);
 
   btn1.addEventListener("click", () => {
     let input = prompt("Select number of squares");
@@ -56,7 +57,7 @@ function inputGrid() {
     let squares = document.querySelectorAll(`.container .square`);
     squares.forEach(function (square) {
       square.addEventListener("mouseover", function () {
-        square.style.backgroundColor = "lightblue";
+           square.style.backgroundColor = btn3.value;
       });
     });
   }
